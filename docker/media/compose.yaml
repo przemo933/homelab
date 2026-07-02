@@ -1,0 +1,22 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+
+    user: "1000:1000"
+
+    network_mode: host
+
+    environment:
+      - TZ=Europe/Warsaw
+      - JELLYFIN_PublishedServerUrl=http://jellyfin.local
+
+    volumes:
+      - /opt/homelab/config/jellyfin/config:/config
+      - /opt/homelab/config/jellyfin/cache:/cache
+      - /opt/homelab/config/jellyfin/fonts:/usr/local/share/fonts/custom:ro
+      - /mnt/media:/media
+
+    extra_hosts:
+      - host.docker.internal:host-gateway
