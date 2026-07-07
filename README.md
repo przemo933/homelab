@@ -14,12 +14,12 @@ Self-hosted homelab powered by Proxmox, Docker and TrueNAS.
 - Jellyfin
 - WireGuard
 - qBittorrent
+- Prowlarr
 
 ## Planned
 
 - Radarr
 - Sonarr
-- Prowlarr
 - Homepage
 - Uptime Kuma
 
