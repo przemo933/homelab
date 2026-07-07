@@ -13,12 +13,23 @@ Self-hosted homelab powered by Proxmox, Docker and TrueNAS.
 
 - Jellyfin
 - WireGuard
+- qBittorrent
 
 ## Planned
 
-- qBittorrent
 - Radarr
 - Sonarr
 - Prowlarr
 - Homepage
 - Uptime Kuma
+
+## Storage
+
+TrueNAS SCALE (NFS)
+TrueNAS
+└── media
+    ├── downloads
+    ├── movies
+    ├── tv
+    ├── music
+    └── photos
