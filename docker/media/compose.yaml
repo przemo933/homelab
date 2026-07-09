@@ -55,3 +55,39 @@ services:
       - "9696:9696"
 
     restart: unless-stopped
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Warsaw
+
+    volumes:
+      - /opt/homelab/config/radarr:/config
+      - /mnt/media:/media
+
+    ports:
+      - "7878:7878"
+
+    restart: unless-stopped
+
+   bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Warsaw
+
+    volumes:
+      - /opt/homelab/config/bazarr:/config
+      - /mnt/media:/media
+
+    ports:
+      - "6767:6767"
+
+    restart: unless-stopped

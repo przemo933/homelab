@@ -4,7 +4,7 @@ Self-hosted homelab powered by Proxmox, Docker and TrueNAS.
 ## Infrastructure
 
 - Proxmox VE
-- Ubuntu 24.04 LTS
+- Ubuntu Server 24.04 LTS
 - Docker & Docker Compose
 - TrueNAS SCALE
 - NFS storage
@@ -15,10 +15,11 @@ Self-hosted homelab powered by Proxmox, Docker and TrueNAS.
 - WireGuard
 - qBittorrent
 - Prowlarr
+- Radarr
+- Bazarr
 
 ## Planned
 
-- Radarr
 - Sonarr
 - Homepage
 - Uptime Kuma
